@@ -1,0 +1,16 @@
+{
+  "name": "pasta-bar-layout",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "scss-render": "node-sass scss/main.scss style/style.css -w",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "vite": "^5.0.8"
+  }
+}
