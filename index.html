@@ -2,22 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🍕 PizzDelivery</title>
     <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="container">
+    <div class="container">
       <header class="header">
-        <img src="/src/assets/logo.svg" alt="Fib pasta bar" />
-        <div class="hamburger">
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
+        <div class="header__topnav">
+          <img src="/src/assets/logo.svg" alt="Fib pasta bar" />
+          <button class="hamburger">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
         </div>
-        <nav class="header__menu">
-          <ul class="header__list">
+
+        <nav class="header__menu header__menu_disabled">
+          <ul class="header__list fs-medium fw-600">
             <li class="header__item">
               <a class="header__link" href="#">Пицца</a>
             </li>
@@ -51,15 +59,21 @@
             <li class="header__item">
               <a class="header__link" href="#">Контакты</a>
             </li>
-            <li class="header__item">
+            <li class="header__item fw-800">
               <a class="header__login header__link" href="#">Войти</a>
             </li>
           </ul>
-          <a href="tel:+74993918449">8 499 391-84-49</a>
-          <a class="header__link shopping-cart" href="#">Корзина</a>
+          <a
+            class="header__link header__tel fw-700 fs-large"
+            href="tel:+74993918449"
+            >8 499 391-84-49</a
+          >
+          <a class="button button_white button_medium fs-16 fw-700" href="#"
+            >Корзина</a
+          >
         </nav>
       </header>
     </div>
-    <script type="module" src="/src/components/hamburger.js"></script>
+    <script type="module" src="/src/components/hamburger.mjs"></script>
   </body>
 </html>

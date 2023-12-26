@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  text-align: center;
+
+  &_white {
+    background-color: $color-white;
+    color: $color-dark-gray;
+  }
+
+  &_medium {
+    padding: 0.7rem 2.5rem;
+    max-width: 16rem;
+    line-height: 2.8rem;
+  }
+}

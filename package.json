@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "scss-render": "node-sass scss/main.scss style/style.css -w",
+    "compile:scss": "node-sass scss/main.scss style/style.css -w",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

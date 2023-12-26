@@ -1,0 +1,57 @@
+.header {
+  // Top nav of header
+  &__topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $mobile-main-padding;
+  }
+
+  &__menu {
+    &_disabled {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &_enabled {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 3.1rem;
+      width: 100%;
+      background-color: $color-yellow;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    text-align: center;
+    padding-top: 0.4rem;
+    padding-left: 0.1rem;
+    margin-bottom: 1.4rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-black;
+    line-height: 2.6rem;
+  }
+
+  // login button styles
+  &__list > :last-child {
+    padding-top: 0.65rem;
+  }
+
+  &__tel {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.82rem;
+  }
+
+  .button {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
