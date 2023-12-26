@@ -9,7 +9,7 @@ function openMenu() {
     menu.classList.remove("header__menu_disabled");
     menu.classList.add("header__menu_enabled");
     topNavHeader.style.backgroundColor = "#f7d22d";
-  } else if (menu.classList.contains("header__menu_enabled")) {
+  } else {
     menu.classList.remove("header__menu_enabled");
     menu.classList.add("header__menu_disabled");
     topNavHeader.style.backgroundColor = "#fff";
