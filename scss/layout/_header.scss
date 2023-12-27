@@ -1,10 +1,28 @@
 .header {
   // Top nav of header
   &__topnav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: $mobile-main-padding;
+
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+
+    z-index: 9999;
+  }
+
+  &__clip-path {
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    background: #f7d22d;
+    clip-path: circle(0% at 0 0);
+    z-index: 0;
+    transition: clip-path 1s ease-out;
   }
 
   &__menu {
@@ -16,6 +34,8 @@
 
     &_enabled {
       display: block;
+      position: relative;
+      z-index: 9999;
       margin: 0 auto;
       padding-bottom: 3.1rem;
       width: 100%;
