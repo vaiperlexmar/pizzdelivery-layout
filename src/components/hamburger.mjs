@@ -14,17 +14,22 @@ function openMenu() {
     circle.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
 
     // menu appering animation
-    menu.classList.toggle("slide-bottom");
+    menu.classList.remove("slide-top");
+    menu.classList.add("slide-bottom");
   } else {
     hamburger.classList.remove("hamburger_open");
     menu.classList.remove("header__menu_enabled");
-    menu.classList.add("header__menu_disabled");
+
+    setTimeout(() => {
+      menu.classList.add("header__menu_disabled");
+    }, 500);
 
     // top-side header animation of color filling
     circle.style.clipPath = "polygon(0 0, 100% 0, 100% 0%, 0 0%)";
 
     // menu disappering animation
-    menu.classList.toggle("slide-bottom");
+    menu.classList.remove("slide-bottom");
+    menu.classList.add("slide-top");
   }
 }
 
