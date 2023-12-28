@@ -9,13 +9,22 @@ function openMenu() {
     hamburger.classList.add("hamburger_open");
     menu.classList.remove("header__menu_disabled");
     menu.classList.add("header__menu_enabled");
-    circle.style.clipPath = "circle(200% at 0 0)";
+
+    // top-side header animation of color filling
+    circle.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+
+    // menu appering animation
+    menu.classList.toggle("slide-bottom");
   } else {
     hamburger.classList.remove("hamburger_open");
     menu.classList.remove("header__menu_enabled");
     menu.classList.add("header__menu_disabled");
 
-    circle.style.clipPath = "circle(0% at 0 0)";
+    // top-side header animation of color filling
+    circle.style.clipPath = "polygon(0 0, 100% 0, 100% 0%, 0 0%)";
+
+    // menu disappering animation
+    menu.classList.toggle("slide-bottom");
   }
 }
 
