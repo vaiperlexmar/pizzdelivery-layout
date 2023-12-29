@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   // Top nav of header
   &__topnav {
     position: relative;
@@ -26,6 +28,8 @@
   }
 
   &__menu {
+    position: absolute;
+
     &_disabled {
       display: none;
       visibility: hidden;
@@ -35,7 +39,6 @@
 
     &_enabled {
       display: block;
-      position: relative;
       z-index: 9999;
       margin: 0 auto;
       padding-bottom: 3.1rem;
