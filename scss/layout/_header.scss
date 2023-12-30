@@ -30,6 +30,7 @@
   &__menu {
     position: absolute;
     width: 100%;
+    z-index: 9999;
 
     &_disabled {
       display: none;
@@ -40,7 +41,6 @@
 
     &_enabled {
       display: block;
-      z-index: 9999;
       margin: 0 auto;
       padding-bottom: 3.1rem;
       background-color: $color-yellow;
