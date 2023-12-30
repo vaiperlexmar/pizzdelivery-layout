@@ -29,6 +29,7 @@
 
   &__menu {
     position: absolute;
+    width: 100%;
 
     &_disabled {
       display: none;
@@ -42,7 +43,6 @@
       z-index: 9999;
       margin: 0 auto;
       padding-bottom: 3.1rem;
-      width: 100%;
       background-color: $color-yellow;
     }
   }
