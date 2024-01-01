@@ -1,0 +1,38 @@
+.slideshow {
+  position: relative;
+  &__container {
+    padding-left: 1rem;
+
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: hidden;
+  }
+
+  &__slide {
+    width: 66vw;
+  }
+
+  &__controls {
+    display: flex;
+    position: absolute;
+    gap: 74.5vw;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 2rem;
+    height: 2rem;
+
+    border-radius: 2.7rem;
+    border: 0;
+    background-color: $color-yellow;
+
+    font-size: 0.8rem;
+  }
+}
