@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -76,33 +80,45 @@
       </header>
 
       <main class="main">
-        <div class="slideshow">
-          <div class="slideshow__container">
-            <img
-              class="slideshow__slide"
-              src="/src/assets/slideshow-img 1.png"
-              alt=""
-            />
-            <img
-              class="slideshow__slide"
-              src="/src/assets/slideshow-img 2.png"
-              alt=""
-            />
-
-            <img
-              class="slideshow__slide"
-              src="/src/assets/slideshow-img 3.png"
-              alt=""
-            />
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides" style="padding-left: 1rem">
+              <li style="margin: 0">
+                <img
+                  class="glide__slide"
+                  src="/src/assets/slideshow-img 1.png"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="glide__slide"
+                  src="/src/assets/slideshow-img 2.png"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="glide__slide"
+                  src="/src/assets/slideshow-img 3.png"
+                  alt=""
+                />
+              </li>
+            </ul>
           </div>
 
-          <div class="slideshow__controls">
-            <button class="slideshow__btn slideshow__prev">&#10094;</button>
-            <button class="slideshow__btn slideshow__next">&#10095;</button>
+          <div class="glide__controls" data-glide-el="controls">
+            <button class="glide__btn glide__prev" data-glide-dir="<">
+              &#10094;
+            </button>
+            <button class="glide__btn glide__next" data-glide-dir=">">
+              &#10095;
+            </button>
           </div>
         </div>
       </main>
     </div>
     <script type="module" src="/src/components/hamburger.mjs"></script>
+    <script type="module" src="/src/components/slideshow.mjs"></script>
   </body>
 </html>

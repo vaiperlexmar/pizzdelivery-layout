@@ -158,23 +158,24 @@ body {
     top: 1.2rem;
     left: 0.55rem; }
 
-.slideshow {
+.glide {
   position: relative; }
-  .slideshow__container {
+  .glide__slides {
     padding-left: 1rem;
     display: flex;
-    gap: 1.2rem;
-    overflow-x: hidden; }
-  .slideshow__slide {
+    gap: 1rem;
+    overflow-x: hidden;
+    list-style: none; }
+  .glide__slide {
     width: 66vw; }
-  .slideshow__controls {
+  .glide__controls {
     display: flex;
     position: absolute;
     gap: 74.5vw;
     top: 49%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .slideshow__btn {
+  .glide__btn {
     display: flex;
     justify-content: center;
     align-items: center;
