@@ -1,0 +1,75 @@
+.dishes {
+  padding: 0 1rem;
+
+  &__heading {
+    font-size: 2.1rem;
+    color: $color-yellow;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+  }
+
+  .dish {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    align-items: center;
+
+    &__img {
+      width: 10.3rem;
+    }
+
+    &__name {
+      margin-bottom: 0.3rem;
+
+      font-size: $mobile-font-regular; // 1rem
+      font-weight: 800;
+      color: #797979;
+      line-height: 2rem;
+    }
+
+    &__description {
+      color: #686466;
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.3rem;
+    }
+
+    &__price {
+      color: $color-dark-gray;
+      font-size: $mobile-font-extralarge; // 2.2rem
+      font-weight: 700;
+      line-height: 1.9rem;
+      padding-bottom: 0.5rem;
+    }
+
+    &__cart-btn {
+      width: 12.5rem;
+      height: 3.6rem;
+      padding-right: 0.1rem;
+      padding-left: 0.1rem;
+
+      border-radius: 0.8rem;
+      background-color: $color-yellow;
+      border: none;
+
+      color: #473e43;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+      letter-spacing: 0.1rem;
+
+      justify-self: start;
+
+      position: relative;
+      left: 1rem;
+    }
+  }
+}

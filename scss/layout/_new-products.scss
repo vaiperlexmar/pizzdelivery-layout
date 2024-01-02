@@ -35,6 +35,11 @@
     border-radius: 1.2rem;
     background-color: #fff;
 
+    &:active {
+      transition: all 0.2s;
+      transform: translateY(3px);
+    }
+
     &__link {
       text-decoration: none;
 
