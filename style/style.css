@@ -77,6 +77,9 @@ body {
 .fs-regular {
   font-size: 1rem; }
 
+.fs-13 {
+  font-size: 1.3rem; }
+
 .fs-14 {
   font-size: 1.4rem; }
 
@@ -88,6 +91,15 @@ body {
 
 .fs-large {
   font-size: 1.8rem; }
+
+.fs-19 {
+  font-size: 1.9rem; }
+
+.fc-yellow {
+  color: #f7d22d; }
+
+.fc-darkgray {
+  color: #231f20; }
 
 .button {
   display: inline-block;
@@ -159,9 +171,9 @@ body {
     left: 0.55rem; }
 
 .glide {
-  position: relative; }
+  position: relative;
+  margin-bottom: 2.7rem; }
   .glide__slides {
-    padding-left: 1rem;
     display: flex;
     gap: 1rem;
     overflow-x: hidden;
@@ -243,3 +255,52 @@ body {
     margin: 0 auto;
     justify-content: center;
     align-items: center; }
+
+.new-products {
+  position: relative; }
+  .new-products__heading {
+    padding-left: 1rem; }
+  .new-products__list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: scroll;
+    padding: 1.1rem 0 2.3rem 1rem;
+    position: relative;
+    scrollbar-width: none; }
+    .new-products__list ::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      background: transparent; }
+  .new-products .new-product {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.2rem;
+    align-items: center;
+    width: 20rem;
+    padding: 1.1rem 1.4rem;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 1.2rem;
+    background-color: #fff; }
+    .new-products .new-product__link {
+      text-decoration: none; }
+      .new-products .new-product__link:active {
+        color: #231f20; }
+    .new-products .new-product__img {
+      width: 5.6rem; }
+    .new-products .new-product__name {
+      margin: 0.1rem;
+      padding-left: 0.1rem;
+      padding-bottom: 0.1rem; }
+    .new-products .new-product__price {
+      padding-left: 0.2rem; }
+  .new-products__man-img {
+    position: absolute;
+    top: 1rem;
+    left: -3.5rem;
+    width: 7.3011rem;
+    height: 15.5rem;
+    transform: rotate(10.6deg);
+    z-index: -999;
+    overflow: hidden;
+    opacity: 0.4; }

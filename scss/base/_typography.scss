@@ -11,11 +11,15 @@
 }
 
 .fs-small {
-  font-size: $mobile-font-small;
+  font-size: $mobile-font-small; // 0.9rem
 }
 
 .fs-regular {
-  font-size: $mobile-font-regular;
+  font-size: $mobile-font-regular; // 1rem
+}
+
+.fs-13 {
+  font-size: 1.3rem;
 }
 
 .fs-14 {
@@ -23,7 +27,7 @@
 }
 
 .fs-medium {
-  font-size: $mobile-font-medium;
+  font-size: $mobile-font-medium; // 1.5rem
 }
 
 .fs-16 {
@@ -31,5 +35,17 @@
 }
 
 .fs-large {
-  font-size: $mobile-font-large;
+  font-size: $mobile-font-large; // 1.8rem
+}
+
+.fs-19 {
+  font-size: 1.9rem;
+}
+
+.fc-yellow {
+  color: $color-yellow;
+}
+
+.fc-darkgray {
+  color: $color-dark-gray;
 }

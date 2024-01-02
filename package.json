@@ -6,6 +6,7 @@
   "scripts": {
     "compile:scss": "node-sass scss/main.scss style/style.css -w",
     "dev": "vite",
+    "host": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
