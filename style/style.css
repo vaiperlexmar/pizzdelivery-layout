@@ -101,6 +101,13 @@ body {
 .fc-darkgray {
   color: #231f20; }
 
+.heading_secondary {
+  margin-bottom: 1.8rem;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: normal;
+  text-align: center; }
+
 .button {
   display: inline-block;
   border: none;
@@ -365,12 +372,6 @@ body {
 .promotions {
   position: relative;
   margin-bottom: 3.6rem; }
-  .promotions__heading {
-    margin-bottom: 1.8rem;
-    font-weight: 800;
-    font-size: 2rem;
-    line-height: normal;
-    text-align: center; }
   .promotions__table {
     display: grid;
     grid-template-rows: repeat(2, 1fr);

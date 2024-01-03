@@ -2,14 +2,6 @@
   position: relative;
   margin-bottom: 3.6rem;
 
-  &__heading {
-    margin-bottom: 1.8rem;
-    font-weight: 800;
-    font-size: 2rem;
-    line-height: normal;
-    text-align: center;
-  }
-
   &__table {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
