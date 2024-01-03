@@ -1,0 +1,55 @@
+.promotions {
+  position: relative;
+  margin-bottom: 3.6rem;
+
+  &__heading {
+    margin-bottom: 1.8rem;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: normal;
+    text-align: center;
+  }
+
+  &__table {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  &__item {
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  &__subtable {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 2.3rem;
+    background-color: $color-yellow;
+    padding: 0 2rem;
+    width: 10rem;
+    color: $color-dark-gray;
+    font-weight: 700;
+    font-size: $mobile-font-regular;
+    line-height: 2.8rem;
+  }
+
+  &__woman-img {
+    position: absolute;
+    top: 92%;
+    right: 0;
+    width: 7.9rem;
+    transform: rotateY(180deg);
+  }
+}
