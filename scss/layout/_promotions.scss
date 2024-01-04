@@ -40,9 +40,20 @@
   &__woman-img {
     position: absolute;
     top: 92%;
-    right: -3%;
+    right: 0%;
     width: 7.9rem;
     transform: rotateY(180deg);
     z-index: -1;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .promotions {
+    &__button {
+      font-size: calc(1rem + 1vw);
+      padding: 0 2rem;
+      width: calc(10rem + 10vw);
+    }
   }
 }

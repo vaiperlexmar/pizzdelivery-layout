@@ -75,3 +75,48 @@
     }
   }
 }
+
+@media only screen and (min-width: 360px) {
+  .dishes {
+    &__heading {
+      font-size: calc(2.1rem + 1vw);
+    }
+
+    .dish {
+      &__img {
+        width: calc(10rem + 8vw);
+        margin-right: calc(0.5rem + 1vw);
+      }
+
+      &__name {
+        font-size: calc(1rem + 0.5vw);
+      }
+
+      &__description {
+        font-size: calc(0.9rem + 0.35vw);
+      }
+
+      &__cart-btn {
+        width: calc(12.5rem + 15vw);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .dishes {
+    .dish {
+      &__img {
+        margin-right: calc(0.5rem + 5vw);
+      }
+
+      &__name {
+        font-size: calc(1rem + 1vw);
+      }
+
+      &__description {
+        font-size: calc(0.9rem + 0.5vw);
+      }
+    }
+  }
+}
