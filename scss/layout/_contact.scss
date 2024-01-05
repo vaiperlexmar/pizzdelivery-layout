@@ -1,0 +1,37 @@
+.contact {
+  &__social {
+    display: flex;
+    gap: 3.75vw;
+    margin-bottom: 1.27rem;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #e3ecf5;
+    border-radius: 0.6rem;
+    width: 12.5vw;
+    height: 12.5vw;
+
+    img {
+      width: 65%;
+    }
+  }
+
+  &__direct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    border: 2px solid #e3ecf5;
+    border-radius: 0.8rem;
+    border-radius: 0.8rem;
+    padding: 1.3rem 0;
+    color: $color-black;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+}

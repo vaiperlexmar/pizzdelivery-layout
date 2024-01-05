@@ -1,2 +1,106 @@
 .footer {
+  padding: 3rem 1rem 0;
+  color: $color-dark-gray;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.3rem;
+  }
+
+  &__logo {
+    width: 22.5vw;
+  }
+
+  &__phone {
+    margin-bottom: 0.5rem;
+    color: $color-yellow;
+    font-weight: 700;
+    font-size: $mobile-font-extralarge;
+
+    &-btn {
+      float: right;
+      border-radius: 2.8rem;
+      background-color: #f3f3f7;
+      padding: 0 2.1rem;
+      color: #696f7a;
+      font-weight: 700;
+      font-size: $mobile-font-regular;
+      line-height: 2.8rem;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    &_yellow {
+      color: $color-yellow;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.85;
+    margin-bottom: 2.2rem;
+    font-weight: 700;
+  }
+
+  &__heading {
+    margin-bottom: 1.5rem;
+
+    &_bold {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $color-black;
+    }
+  }
+
+  &__social {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a b c" "d e c";
+    row-gap: 1rem;
+    opacity: 0.7;
+    margin-bottom: 1.8rem;
+    font-weight: 600;
+
+    &_instagram {
+      grid-row: 2;
+      grid-column: 1;
+    }
+
+    &_vk {
+      grid-row: 2;
+      grid-column: 2;
+    }
+
+    &_address {
+      grid-column: 3;
+      font-size: 0.89rem;
+    }
+  }
+
+  &__contact {
+    margin-bottom: 1.3rem;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // list
+  &__payment-icons {
+    display: flex;
+
+    img {
+      width: 7vw;
+      filter: brightness(0) saturate(100%) invert(88%) sepia(10%) saturate(171%)
+        hue-rotate(168deg) brightness(101%) contrast(103%);
+    }
+  }
 }
