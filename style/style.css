@@ -259,14 +259,14 @@ body {
       text-align: center; }
 
 @media only screen and (min-width: 360px) {
+  .advantages .heading_secondary {
+    font-size: calc(2.1rem + 1vw); }
   .advantages__item {
     height: calc(100% + 1vw); }
   .advantages .advantage__description {
     font-size: calc(1rem + 0.5vw); } }
 
 @media only screen and (min-width: 420px) {
-  .advantages__item {
-    height: calc(100% + 1vw); }
   .advantages .advantage__description {
     font-size: calc(1rem + 1vw); } }
 

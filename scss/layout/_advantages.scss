@@ -58,13 +58,17 @@
 
 @media only screen and (min-width: 360px) {
   .advantages {
+    .heading_secondary {
+      @include small-mobile-extralarge-font;
+    }
+
     &__item {
       height: calc(100% + 1vw);
     }
 
     .advantage {
       &__description {
-        font-size: calc(1rem + 0.5vw);
+        @include small-mobile-regular-font;
       }
     }
   }
@@ -72,12 +76,9 @@
 
 @media only screen and (min-width: 420px) {
   .advantages {
-    &__item {
-      height: calc(100% + 1vw);
-    }
     .advantage {
       &__description {
-        font-size: calc(1rem + 1vw);
+        @include regular-mobile-regular-font;
       }
     }
   }
