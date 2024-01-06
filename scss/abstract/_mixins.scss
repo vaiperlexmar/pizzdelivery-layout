@@ -1,0 +1,13 @@
+// Responsive mobile fonts
+
+@mixin small-mobile-regular-font {
+  font-size: calc(1rem + 0.5vw);
+}
+
+@mixin small-mobile-extralarge-font {
+  font-size: calc(2.1rem + 1vw);
+}
+
+@mixin regular-mobile-regular-font {
+  font-size: calc(1rem + 1vw);
+}

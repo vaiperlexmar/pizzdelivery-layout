@@ -446,6 +446,22 @@ body {
       width: 7vw;
       filter: brightness(0) saturate(100%) invert(88%) sepia(10%) saturate(171%) hue-rotate(168deg) brightness(101%) contrast(103%); }
 
+@media only screen and (min-width: 360px) {
+  .footer {
+    font-size: calc(1rem + 0.5vw); }
+    .footer__phone {
+      font-size: calc(2.1rem + 1vw); }
+    .footer__social_address {
+      font-size: calc(0.89rem + 0.4vw); }
+    .footer__heading {
+      font-size: calc(1.2rem + 0.5vw); } }
+
+@media only screen and (min-width: 420px) {
+  .footer {
+    font-size: calc(1rem + 1vw); }
+    .footer__social_address {
+      font-size: calc(0.89rem + 0.99vw); } }
+
 .header {
   position: relative; }
   .header__topnav {
