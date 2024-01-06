@@ -50,10 +50,25 @@
 
 @media only screen and (min-width: 360px) {
   .promotions {
+    .heading_secondary {
+      @include small-mobile-extralarge-font;
+    }
+
     &__button {
-      font-size: calc(1rem + 1vw);
-      padding: 0 2rem;
+      @include small-mobile-regular-font;
       width: calc(10rem + 10vw);
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .promotions {
+    &__button {
+      @include regular-mobile-regular-font;
+    }
+
+    &__woman-img {
+      top: 94%;
     }
   }
 }

@@ -612,7 +612,14 @@ body {
     overflow-x: hidden; }
 
 @media only screen and (min-width: 360px) {
+  .promotions .heading_secondary {
+    font-size: calc(2.1rem + 1vw); }
   .promotions__button {
-    font-size: calc(1rem + 1vw);
-    padding: 0 2rem;
+    font-size: calc(1rem + 0.5vw);
     width: calc(10rem + 10vw); } }
+
+@media only screen and (min-width: 420px) {
+  .promotions__button {
+    font-size: calc(1rem + 1vw); }
+  .promotions__woman-img {
+    top: 94%; } }
